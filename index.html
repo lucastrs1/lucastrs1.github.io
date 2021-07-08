@@ -1,11 +1,40 @@
 <!DOCTYPE html>
-
 <html lang="en">
+
 <head>
-  <title>My Website</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Doc</title>
 </head>
 
 <body>
-  <h1>Hello</h1>
+    <div id="wrapper">
+        <h1>How can we help you?</h1>
+        <input type="text" id="input" onkeyup="search_articles()" placeholder="Search help articles...">
+
+        <ul id="selection">
+            <li><a href="#">Support-On-Air-Desk-V1</a></li>
+            <li><a href="#">Support-Proactive-vs.-Reactive-V2</a></li>
+            <li><a href="#">Support-Shift-Left-Follow-up-V1</a></li>
+            <li><a href="#">Support-Wrong-Assignments</a></li>
+        </ul>
+
+        <div class="box-container">
+            <div class="box-item">
+                <h2>Video</h2>
+            </div>
+            <div class="box-item">
+                <h2>Documentation</h2>
+            </div>
+            <div class="box-item">
+                <h2>FAQ</h2>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
 </body>
+
 </html>
