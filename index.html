@@ -12,19 +12,24 @@
 </head>
 
 <body>
-
     <!-- Docs Head -->
     <section class="docs-head">
         <div class="container grid">
             <div>
                 <h1>Documentation</h1>
-                <p>
-                    Learn how to work with the PulsR Vision platform
-                </p>
+                <p>Learn how to work with the PulsR Vision platform</p>
             </div>
-            <div class="search-box">
+            <div class="search-input">
                 <button class="btn-search"><i class="fas fa-search"></i></button>
-                <input type="text" class="input-search" placeholder="Type to Search...">
+                <input type="text" id="input" onkeyup="search_articles()" placeholder="Type to Search...">
+
+                <ul id="selection">
+                    <li><a href="pages/Support-On-Air-Desk-V1.html">Support-On-Air-Desk-V1</a></li>
+                    <li><a href="pages/Support-Proactive-vs.-Reactive-V2.html">Support-Proactive-vs.-Reactive-V2</a>
+                    </li>
+                    <li><a href="#">Support-Shift-Left-Follow-up-V1</a></li>
+                    <li><a href="#">Support-Wrong-Assignments</a></li>
+                </ul>
             </div>
         </div>
     </section>
@@ -45,8 +50,9 @@
                 <h3>Lorem, ipsum dolor</h3>
                 <nav>
                     <ul>
-                        <li><a href="#">Support-On-Air-Desk-V1</a></li>
-                        <li><a href="#">Support-Proactive-vs.-Reactive-V2</a></li>
+                        <li><a href="pages/Support-On-Air-Desk-V1.html">Support-On-Air-Desk-V1</a></li>
+                        <li><a href="pages/Support-Proactive-vs.-Reactive-V2.html">Support-Proactive-vs.-Reactive-V2</a>
+                        </li>
                         <li><a href="#">Support-Shift-Left-Follow-up-V1</a></li>
                         <li><a href="#">Support-Wrong-Assignments</a></li>
                     </ul>
@@ -79,19 +85,10 @@
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima totam magni eius vitae velit id,
                     atque veritatis! At, vero porro.
                 </p>
-                <div class="btn-center">
-                    <h3>Did you find this page helpful?</h3>
-                    <button class="like">
-                        <i class="fa fa-thumbs-up"></i>
-                    </button>
-
-                    <button class="dislike">
-                        <i class="fa fa-thumbs-down"></i>
-                    </button>
-                </div>
             </div>
     </section>
 
+    <script src="js/script.js"></script>
 </body>
 
 </html>
