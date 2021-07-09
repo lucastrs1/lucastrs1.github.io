@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Support-Proactive-vs.-Reactive-V2</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card-2 p-2">
+            <h2>How much <mark>IDSC</mark> is proactive?</h2>
+            <p>This dashboard intends to categorize created problems at L3, according their origin, to define part of
+                proactivity of <mark>IDSC.</mark>
+            </p>
+            <h2 class="orange">Reactive definition</h2>
+            <p>A reactive problem is a problem created by the L3 after:</p>
+            <ul>
+                <li>Incident reception and a root cause analysis is required,</li>
+                <li>Direct request from Airbus to launch an investigation</li>
+            </ul>
+            <h2 class="orange">Proactive definition</h2>
+            <p>A proactive problem is a problem created by the L3 after:</p>
+            <ul>
+                <li>Issue detected by the L3/<mark>Product Owner</mark> before the users do,</li>
+                <li>Escalation confirmed from the L3 Monitoring,</li>
+                <li>Preventive study on potential bottleneck identified (robustness mainly)</li>
+            </ul>
+            <p><mark>Basically for any problems without incidents linked to it.</mark></p>
+            <h2 class="orange">How to use the dashboard</h2>
+            <ul>
+                <li>Select the time frame for expected data:</li>
+                <li>Select if you want to see an historic of the data per month or the global volume of data:</li>
+                <li>To retrieve the tickets details of the data, click on the chart sections required. it will then
+                    display
+                    a
+                    second chart with the detailed origins:
+                </li>
+            </ul>
+            <p>For this specific chart, you can then filter for a single origin by using the list:</p>
+            <p>Then click one of the origins section will display the data details in a table:</p>
+            <p>For the specific “Time view” chart, you will also have the possibility to filter for a single product in
+                order to refine the analysis:
+            </p>
+            <div class="video">
+                <iframe width="620" height="315" src="https://www.youtube.com/embed/HmzDN-6MvjA"
+                    allow="fullscreen;"></iframe>
+            </div>
+
+            <div class="btn-center">
+                <h3>Did you find this page helpful?</h3>
+                <button class="like" onclick="countLike()">
+                    <i class="fa fa-thumbs-up"></i>
+                </button>
+                <button class="dislike" onclick="countDislike()">
+                    <i class="fa fa-thumbs-down"></i>
+                </button>
+                <p>Like = <b id='like'>0</b></p>
+                <p>Dislike = <b id='dislike'>0</b></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
