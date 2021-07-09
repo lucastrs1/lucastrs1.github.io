@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap');
 
 /* BASE STYLE */
 * {
@@ -8,13 +8,9 @@
 }
 
 body {
-  font-family:'Lato', sans-serif;
+  font-family: 'Lato', sans-serif;
   color: #333;
   line-height: 1.6;
-}
-
-ul {
-  list-style-type: none;
 }
 
 a {
@@ -33,14 +29,14 @@ p {
   margin: 10px 0;
 }
 
-/* SEARCH BAR */
-.search-box {
+/* SEARCH BOX */
+.search-input {
   position: absolute;
   top: 10px;
   right: 20px;
 }
 
-.input-search {
+#input {
   height: 50px;
   width: 50px;
   border-style: none;
@@ -55,7 +51,7 @@ p {
   color:#fff;
 }
 
-.input-search::placeholder {
+#input::placeholder {
   color:rgba(255,255,255,.5);
   font-size: 18px;
   letter-spacing: 2px;
@@ -78,7 +74,7 @@ p {
   pointer-events: painted;  
 }
 
-.btn-search:focus ~ .input-search {
+.btn-search:focus ~ #input{
   width: 300px;
   border-radius: 0px;
   background-color: transparent;
@@ -86,12 +82,20 @@ p {
   transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
 }
 
-.input-search:focus {
+#input:focus {
   width: 300px;
   border-radius: 0px;
   background-color: transparent;
   border-bottom:1px solid rgba(255,255,255,.5);
   transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+}
+
+#selection li a{
+  color: #fff;
+}
+
+#selection {
+  list-style: none;
 }
 
 /* DOCS */
@@ -123,6 +127,7 @@ p {
   padding-bottom: 5px;
   margin-bottom: 5px;
   border-bottom: 1px #ccc solid;
+  list-style-type: none;
 }
 
 .docs-main a:hover {
@@ -206,12 +211,10 @@ p {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
   }
-
   .docs-head {
     text-align: center;
     padding-left: 40px;
   }
-
   .docs-head h1 {
     padding-top: 20px;
   }
@@ -226,5 +229,39 @@ p {
   .docs-head p{
     font-size: 1rem;
   }
+  .search-box {
+    display: none;
+  }
 }
 
+/* Support-On-Air-Desk-V1 */
+iframe {
+  border: 0px;
+}
+
+/* Support-Proactive-vs.-Reactive-V2 */
+.card-2 {
+  color: #333;
+  padding: 20px;
+  margin: 10px;
+}
+
+.card-2 ul {
+  padding-left: 3rem;
+}
+
+.orange {
+  color: orange;
+  font-weight: bold;
+  font-size: 16px;
+  text-decoration: underline;
+}
+
+.video {
+  display: flex;
+  justify-content: center;
+}
+
+.card-2 .btn-center {
+  padding: 10px 0px;
+}
