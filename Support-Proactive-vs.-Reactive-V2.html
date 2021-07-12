@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Support-Proactive-vs.-Reactive-V2</title>
+</head>
+
+<body>
+    <!-- Head -->
+    <section class="docs-head">
+        <div class="container grid">
+            <div>
+                <h1>Proactive-vs.-Reactive-V2</h1>
+            </div>
+            <div class="search-input">
+                <button class="icon"><i class="fas fa-search"></i></button>
+                <input type="text" placeholder="Type to Search...">
+                <a href="" hidden></a>
+                <div class="autocom-box">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main -->
+    <section class="docs-main m-3">
+        <div class="container grid">
+            <div class="card-1 bg-grey p-2">
+                <h3>Lorem, ipsum dolor</h3>
+                <nav>
+                    <ul>
+                        <li><a href="docs.html">Introduction</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </nav>
+
+                <h3>Lorem, ipsum dolor</h3>
+                <nav>
+                    <ul>
+                        <li><a href="Support-On-Air-Desk-V1.html">Support-On-Air-Desk-V1</a></li>
+                        <li><a class="text-primary" href="#">Support-Proactive-vs.-Reactive-V2</a>
+                        </li>
+                        <li><a href="#">Support-Shift-Left-Follow-up-V1</a></li>
+                        <li><a href="#">Support-Wrong-Assignments</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="card-2">
+                <a class="export" href="pdf/Support-Proactive-vs.-Reactive-V2.pdf" target="_blank"><img
+                        src="img/export-pdf.png" alt="..."></a>
+                <h2>How much <mark>IDSC</mark> is proactive?</h2>
+                <p>This dashboard intends to categorize created problems at L3, according their origin, to define part
+                    of proactivity of <mark>IDSC.</mark>
+                </p>
+                <h2 class="orange">Reactive definition</h2>
+                <p>A reactive problem is a problem created by the L3 after:</p>
+                <ul>
+                    <li>Incident reception and a root cause analysis is required,</li>
+                    <li>Direct request from Airbus to launch an investigation</li>
+                </ul>
+                <h2 class="orange">Proactive definition</h2>
+                <p>A proactive problem is a problem created by the L3 after:</p>
+                <ul>
+                    <li>Issue detected by the L3/<mark>Product Owner</mark> before the users do,</li>
+                    <li>Escalation confirmed from the L3 Monitoring,</li>
+                    <li>Preventive study on potential bottleneck identified (robustness mainly)</li>
+                </ul>
+                <p><mark>Basically for any problems without incidents linked to it.</mark></p>
+                <h2 class="orange">How to use the dashboard</h2>
+                <ul>
+                    <li>Select the time frame for expected data:
+                        <img src="img/img1.PNG" width="600" alt="...">
+                    </li>
+                    <li>Select if you want to see an historic of the data per month or the global volume of data:
+                        <img src="img/img2.PNG" width="600" alt="...">
+                        <p>The required chart will be then displayed:</p>
+                        <img src="img/img3.PNG" width="600" alt="...">
+                        <p>or</p>
+                        <img src="img/img4.PNG" width="600" alt="...">
+                    </li>
+                    <li>To retrieve the tickets details of the data, click on the chart sections required. it will then
+                        display a second chart with the detailed origins: <br>
+                        <img src="img/img5.PNG" width="600" alt="...">
+                    </li>
+                </ul>
+                <p>For this specific chart, you can then filter for a single origin by using the list:</p>
+                <img src="img/img6.PNG" width="600" alt="...">
+                <p>Then click one of the origins section will display the data details in a table:</p>
+                <img src="img/img7.PNG" width="600" alt="...">
+                <p>For the specific “Time view” chart, you will also have the possibility to filter for a single product
+                    in order to refine the analysis:
+                </p>
+                <img src="img/img8.PNG" width="600" alt="...">
+                <div class="video">
+                    <iframe width="620" height="315" src="https://www.youtube.com/embed/HmzDN-6MvjA"
+                        allow="fullscreen;">
+                    </iframe>
+                </div>
+
+                <div class="btn-center">
+                    <h3>Did you find this page helpful?</h3>
+                    <button class="like" onclick="countLike()">
+                        <i class="fa fa-thumbs-up"></i>
+                    </button>
+                    <button class="dislike" onclick="countDislike()">
+                        <i class="fa fa-thumbs-down"></i>
+                    </button>
+                </div>
+            </div>
+    </section>
+
+    <script src="js/search.js"></script>
+    <script src="js/count.js"></script>
+</body>
+
+</html>
