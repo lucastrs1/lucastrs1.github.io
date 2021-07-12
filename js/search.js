@@ -2,8 +2,7 @@ const searchWrapper = document.querySelector(".search-input");
 const inputBox = searchWrapper.querySelector("input");
 const arrayBox = searchWrapper.querySelector(".autocom-box");
 const icon = searchWrapper.querySelector(".icon");
-let array = ["Support-On-Air-Desk-V1", "Support-Proactive-vs.-Reactive-V2"];
-
+let array = ["docs", "Support-On-Air-Desk-V1", "Support-Proactive-vs.-Reactive-V2"];
 let linkTag = searchWrapper.querySelector("a");
 let linkPages;
 
@@ -13,7 +12,7 @@ inputBox.onkeyup = (e) => {
     let emptyArray = [];
     if (userData) {
         arrayBox.onclick = () => {
-            linkPages = `pages/${userData}`;
+            linkPages = `${userData}`;
             linkTag.setAttribute("href", linkPages);
             linkTag.click();
         }
@@ -39,7 +38,7 @@ function select(element) {
     let selectData = element.textContent;
     inputBox.value = selectData;
     arrayBox.onclick = () => {
-        linkPages = `pages/${selectData}.html`;
+        linkPages = `${selectData}.html`;
         linkTag.setAttribute("href", linkPages);
         linkTag.click();
     }
