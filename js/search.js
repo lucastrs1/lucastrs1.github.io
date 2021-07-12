@@ -2,7 +2,7 @@ const searchWrapper = document.querySelector(".search-input");
 const inputBox = searchWrapper.querySelector("input");
 const arrayBox = searchWrapper.querySelector(".autocom-box");
 const icon = searchWrapper.querySelector(".icon");
-let array = ["docs", "Support-On-Air-Desk-V1", "Support-Proactive-vs.-Reactive-V2"];
+let array = ["index", "Support-On-Air-Desk-V1", "Support-Proactive-vs.-Reactive-V2"];
 let linkTag = searchWrapper.querySelector("a");
 let linkPages;
 
