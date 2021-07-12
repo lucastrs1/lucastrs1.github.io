@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Support-On-Air-Desk-V1</title>
+</head>
+
+<body>
+
+    <!-- Head -->
+    <section class="docs-head">
+        <div class="container grid">
+            <div>
+                <h1>On-Air-Desk-V1</h1>
+            </div>
+            <div class="search-input">
+                <button class="icon"><i class="fas fa-search"></i></button>
+                <input type="text" placeholder="Type to Search...">
+                <a href="" hidden></a>
+                <div class="autocom-box">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main -->
+    <section class="docs-main m-3">
+        <div class="container grid">
+            <div class="card-1 bg-grey p-2">
+                <h3>Lorem, ipsum dolor</h3>
+                <nav>
+                    <ul>
+                        <li><a href="docs.html">Introduction</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </nav>
+
+                <h3>Lorem, ipsum dolor</h3>
+                <nav>
+                    <ul>
+                        <li><a class="text-primary" href="#">Support-On-Air-Desk-V1</a></li>
+                        <li><a href="Support-Proactive-vs.-Reactive-V2.html">Support-Proactive-vs.-Reactive-V2</a>
+                        </li>
+                        <li><a href="#">Support-Shift-Left-Follow-up-V1</a></li>
+                        <li><a href="#">Support-Wrong-Assignments</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="card-2">
+                <a class="export" href="pdf/Support-On-Air-Desk-V1.pdf" target="_blank"><img src="img/export-pdf.png"
+                        alt="..."></a>
+                <h2><b>What is currently being investigated by the L3?</b></h2>
+                <p>
+                    We defined as “Call Log” the number of unsolved cases. <br>
+                    The Call Log is the pool of incident/problem being investigated and assigned to L3 Support Experts,
+                    in other
+                    words, the IN PROGRESS tickets.
+                </p>
+                <p>
+                    It does not include incidents/problems waiting for the deployment of a Change Note.
+                </p>
+                <p>
+                    The “Call Log” is a great metric to keep an eye on because it can help you figure out how efficient
+                    the support
+                    process is. It can also help you gauge the customer’s happiness level related to your application;
+                    if they have
+                    a lot of IN PROGRESS tickets or critical ones, they’re bound to be unhappy.
+                </p>
+                <h2 class="orange">How the PBOX can help?</h2>
+                <p>
+                    The PBOX, through the “On-Air Desk” dashboard, intends to provide a synthetic view of tickets
+                    currently in
+                    progress at the L3 Support, the Call Log then.
+                </p>
+                <p>
+                    It’s an instant view. <br>
+                    The Call Log is still moving, new incoming tickets and resolved tickets impacting the numbers.
+                </p>
+                <p>
+                    To consult the history of the Call Log, you can use the On-Air History.
+                </p>
+                <h2 class="orange">How to use this Dashboard?</h2>
+                <p>Two charts are displayed by default.</p>
+                <ul>
+                    <li>The Call Log filtered by application:</li>
+                    <img src="img/img9.PNG" width="600" alt="...">
+                    <li>The Call Log filtered by priority:</li>
+                    <img src="img/img10.PNG" width="600" alt="...">
+                    <li>You can navigate with the mouse upon the charts to have the number of each application:</li>
+                    <img src="img/img11.PNG" width="600" alt="...">
+                    <li>To retrieve the tickets details of the data, click on the chart sections or “all links”:</li>
+                    <img src="img/img12.PNG" width="600" alt="...">
+                </ul>
+                <h2 class="orange">How to interact?</h2>
+                <p>Two main actions are available for « In progress » tickets:</p>
+                <ul>
+                    <li>The “On-Air Status” <img src="img/img13.PNG" class="small" width="50" alt="...">
+                        <p>Clicking on this icon will display a small summary of investigation:</p>
+                        <img src="img/img14.PNG" width="600" alt="...">
+                    </li>
+                    <li>The “Follow-me”<img src="img/img15.PNG" class="small" width="80" alt="...">
+                        <p>Clicking on this icon will notify the Support Expert in charge of the ticket:</p>
+                        <img src="img/img16.PNG" width="600" alt="...">
+                    </li>
+                    <p>The Support Expert in charge of the ticket will then send you a detailed status of the
+                        investigation.</p>
+                </ul>
+
+                <div class="video">
+                    <iframe width="620" height="315" src="https://www.youtube.com/embed/HmzDN-6MvjA"
+                        allow="fullscreen;"></iframe>
+                </div>
+
+                <div class="btn-center">
+                    <h3>Did you find this page helpful?</h3>
+                    <button class="like" onclick="countLike()">
+                        <i class="fa fa-thumbs-up"></i>
+                    </button>
+                    <button class="dislike" onclick="countDislike()">
+                        <i class="fa fa-thumbs-down"></i>
+                    </button>
+                </div>
+            </div>
+    </section>
+
+    <script src="js/search.js"></script>
+    <script src="js/count.js"></script>
+
+    <!-- <iframe class="pdf" src="../pdf/Support-On-Air-Desk-V1.pdf" width="100%" height="726px"></iframe> -->
+</body>
+
+</html>
