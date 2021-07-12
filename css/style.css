@@ -36,7 +36,7 @@ p {
   right: 20px;
 }
 
-#input {
+input {
   height: 50px;
   width: 50px;
   border-style: none;
@@ -51,14 +51,14 @@ p {
   color:#fff;
 }
 
-#input::placeholder {
+input::placeholder {
   color:rgba(255,255,255,.5);
   font-size: 18px;
   letter-spacing: 2px;
   font-weight: 100;
 }
 
-.btn-search {
+.icon {
   width: 50px;
   height: 50px;
   border-style: none;
@@ -74,28 +74,55 @@ p {
   pointer-events: painted;  
 }
 
-.btn-search:focus ~ #input{
-  width: 300px;
+.icon:focus ~ input{
+  width: 400px;
   border-radius: 0px;
   background-color: transparent;
   border-bottom:1px solid rgba(255,255,255,.5);
   transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
 }
 
-#input:focus {
-  width: 300px;
+input:focus {
+  width: 400px;
   border-radius: 0px;
   background-color: transparent;
   border-bottom:1px solid rgba(255,255,255,.5);
   transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
 }
 
-#selection li a{
-  color: #fff;
+.search-input.active input{
+  border-radius: 5px 5px 0 0;
 }
 
-#selection {
+.search-input .autocom-box{
+  padding: 0;
+  opacity: 0;
+  pointer-events: none;
+  max-height: 380px;
+  overflow-y: auto;
+}
+
+.search-input.active .autocom-box{
+  padding: 10px 8px;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.autocom-box li{
   list-style: none;
+  display: none;
+  width: 100%;
+  cursor: pointer;
+  padding: 5px 0px;
+  font-size: 17px;
+}
+
+.autocom-box li:hover {
+  text-decoration: underline;
+}
+
+.search-input.active .autocom-box li{
+  display: block;
 }
 
 /* DOCS */
@@ -229,8 +256,8 @@ p {
   .docs-head p{
     font-size: 1rem;
   }
-  .search-box {
-    display: none;
+  .search-input {
+      display: none;
   }
 }
 
