@@ -192,7 +192,6 @@ input:focus {
 
 /* USEFUL CLASS */
 .container {
-
   margin: 0 auto;
   overflow: auto;
   padding: 0 40px;
@@ -206,6 +205,21 @@ input:focus {
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
   padding: 20px;
   margin: 10px;
+}
+
+.card ul {
+  padding-left: 3rem;
+}
+
+.card .orange {
+  color: #F29400;
+  font-weight: bold;
+  font-size: 16px;
+  text-decoration: underline;
+}
+
+.card .btn-center {
+  padding: 10px 0px;
 }
 
 .card-1 {
@@ -274,6 +288,10 @@ input:focus {
   .docs-main .btn-center {
     display: none;
   }
+
+  .export img{
+    display: none;
+  }
 }
 
 /* MOBILE */
@@ -288,43 +306,25 @@ input:focus {
   .search-input {
       display: none;
   }
-  .export {
-    display: none;
-  }
-  
 }
 
 /* Support-On-Air-Desk-V1 AND Support-Proactive-vs.-Reactive-V2 */
-.card-2 {
-  background-color: #fff;
-  color: #333;
-  border-radius: 10px;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-  padding: 20px;
-  margin: 10px;
-}
-
-.card-2 ul {
-  padding-left: 3rem;
-}
-
-.card-2 .orange {
-  color: orange;
-  font-weight: bold;
-  font-size: 16px;
-  text-decoration: underline;
-}
-
 .video {
   display: flex;
   justify-content: center;
   margin-top: 60px;
 }
 
-.card-2 .btn-center {
-  padding: 10px 0px;
-}
-
 .export {
   float: right;
+}
+
+.yellow {
+  background: yellow;
+  color: #333;
+}
+
+mark {
+  background: #F29400;
+  color: #333;
 }
