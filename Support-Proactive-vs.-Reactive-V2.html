@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- style.css -->
     <link rel="stylesheet" href="css/style.css">
     <title>Support-Proactive-vs.-Reactive-V2</title>
 </head>
@@ -21,7 +23,7 @@
             </div>
             <div class="search-input">
                 <button class="icon"><i class="fas fa-search"></i></button>
-                <input type="text" placeholder="Type to Search...">
+                <input type="text" placeholder="Type to Search..." name="keyword" class="form-control input-sm">
                 <a href="" hidden></a>
                 <div class="autocom-box">
                 </div>
@@ -54,12 +56,12 @@
                 </nav>
             </div>
 
-            <div class="card-2">
+            <div class="card context">
                 <a class="export" href="pdf/Support-Proactive-vs.-Reactive-V2.pdf" target="_blank"><img
                         src="img/export-pdf.png" alt="..."></a>
-                <h2>How much <mark>IDSC</mark> is proactive?</h2>
+                <h2>How much <mark class="yellow">IDSC</mark> is proactive?</h2>
                 <p>This dashboard intends to categorize created problems at L3, according their origin, to define part
-                    of proactivity of <mark>IDSC.</mark>
+                    of proactivity of <mark class="yellow">IDSC.</mark>
                 </p>
                 <h2 class="orange">Reactive definition</h2>
                 <p>A reactive problem is a problem created by the L3 after:</p>
@@ -70,11 +72,11 @@
                 <h2 class="orange">Proactive definition</h2>
                 <p>A proactive problem is a problem created by the L3 after:</p>
                 <ul>
-                    <li>Issue detected by the L3/<mark>Product Owner</mark> before the users do,</li>
+                    <li>Issue detected by the L3/<mark class="yellow">Product Owner</mark> before the users do,</li>
                     <li>Escalation confirmed from the L3 Monitoring,</li>
                     <li>Preventive study on potential bottleneck identified (robustness mainly)</li>
                 </ul>
-                <p><mark>Basically for any problems without incidents linked to it.</mark></p>
+                <p><mark class="yellow">Basically for any problems without incidents linked to it.</mark></p>
                 <h2 class="orange">How to use the dashboard</h2>
                 <ul>
                     <li>Select the time frame for expected data:
@@ -118,7 +120,13 @@
             </div>
     </section>
 
+    <!-- Mark.js -->
+    <script src="https://cdn.jsdelivr.net/g/jquery@2.2.4,bootstrap@3.3.6,mark.js@8.6.0(jquery.mark.min.js)"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.min.js"></script>
+
     <script src="js/search.js"></script>
+
     <script src="js/count.js"></script>
 </body>
 
