@@ -5,15 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- style.css -->
     <link rel="stylesheet" href="css/style.css">
     <title>Support-On-Air-Desk-V1</title>
 </head>
 
 <body>
-
     <!-- Head -->
     <section class="docs-head">
         <div class="container grid">
@@ -22,7 +23,7 @@
             </div>
             <div class="search-input">
                 <button class="icon"><i class="fas fa-search"></i></button>
-                <input type="text" placeholder="Type to Search...">
+                <input type="text" placeholder="Type to Search..." name="keyword" class="form-control input-sm">
                 <a href="" hidden></a>
                 <div class="autocom-box">
                 </div>
@@ -55,7 +56,7 @@
                 </nav>
             </div>
 
-            <div class="card-2">
+            <div class="card context">
                 <a class="export" href="pdf/Support-On-Air-Desk-V1.pdf" target="_blank"><img src="img/export-pdf.png"
                         alt="..."></a>
                 <h2><b>What is currently being investigated by the L3?</b></h2>
@@ -129,11 +130,19 @@
                         <i class="fa fa-thumbs-down"></i>
                     </button>
                 </div>
+
             </div>
     </section>
 
+    <!-- Mark.js -->
+    <script src="https://cdn.jsdelivr.net/g/jquery@2.2.4,bootstrap@3.3.6,mark.js@8.6.0(jquery.mark.min.js)"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.min.js"></script>
+
     <script src="js/search.js"></script>
+
     <script src="js/count.js"></script>
+
 </body>
 
 </html>
