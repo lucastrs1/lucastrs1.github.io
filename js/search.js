@@ -1,57 +1,21 @@
-const searchWrapper = document.querySelector(".search-input");
-const inputBox = searchWrapper.querySelector("input");
-const arrayBox = searchWrapper.querySelector(".autocom-box");
-const icon = searchWrapper.querySelector(".icon");
-let array = ["index", "Support-On-Air-Desk-V1", "Support-Proactive-vs.-Reactive-V2"];
-let linkTag = searchWrapper.querySelector("a");
-let linkPages;
+$(function () {
+    var mark = function () {
+        // Read the keyword
+        var keyword = $("input[name='keyword']").val();
 
-
-inputBox.onkeyup = (e) => {
-    let userData = e.target.value;
-    let emptyArray = [];
-    if (userData) {
-        arrayBox.onclick = () => {
-            linkPages = `${userData}`;
-            linkTag.setAttribute("href", linkPages);
-            linkTag.click();
-        }
-        emptyArray = array.filter((data) => {
-
-            return data.toLocaleLowerCase().startsWith(userData.toLocaleLowerCase());
+        // Determine selected options
+        var options = {};
+        $("input[name='opt[]']").each(function () {
         });
-        emptyArray = emptyArray.map((data) => {
-            return data = `<li>${data}</li>`;
+
+        // Remove previous marked elements and mark
+        // the new keyword inside the context
+        $(".context").unmark({
+            done: function () {
+                $(".context").mark(keyword, options);
+            }
         });
-        searchWrapper.classList.add("active");
-        showArray(emptyArray);
-        let allList = arrayBox.querySelectorAll("li");
-        for (let i = 0; i < allList.length; i++) {
-            allList[i].setAttribute("onclick", "select(this)");
-        }
-    } else {
-        searchWrapper.classList.remove("active");
-    }
-}
+    };
+    $("input[name='keyword']").on("input", mark);
+});
 
-function select(element) {
-    let selectData = element.textContent;
-    inputBox.value = selectData;
-    arrayBox.onclick = () => {
-        linkPages = `${selectData}.html`;
-        linkTag.setAttribute("href", linkPages);
-        linkTag.click();
-    }
-    searchWrapper.classList.remove("active");
-}
-
-function showArray(list) {
-    let listData;
-    if (!list.length) {
-        userValue = inputBox.value;
-        listData = `<li>${userValue}</li>`;
-    } else {
-        listData = list.join('');
-    }
-    arrayBox.innerHTML = listData;
-}
