@@ -42,6 +42,33 @@ input {
   background-repeat: no-repeat;
 }
 
+#search-header {
+  margin: 0 2em 10px 0;
+}
+
+.search-results ul {
+  list-style: none;
+  padding-bottom: 10px;
+}
+
+.search-results ul li a{
+  padding: 0px 3px;
+  font-size: 18px;
+  color: #fff;
+}
+
+.clear-search-results {
+  font-size: 0.9em;
+  background-color: #fff;
+  border-radius: 4px;
+  line-height: 16px;
+  padding: 7px 10px;
+  text-align: center;
+  width: 170px;
+  cursor: pointer;
+  border: none;
+}
+
 /* DOCS */
 .docs-head {
   display: flex;
@@ -198,6 +225,9 @@ input {
   .export img{
     display: none;
   }
+  .primary {
+    margin: 0;
+  }
 }
 
 /* MOBILE */
@@ -227,6 +257,20 @@ input {
   }
 
   .card .video{
+    display: none;
+  }
+
+  #clear-search-results-mobile {
+    display: block;
+    font-size: 1.3em;
+    padding: 10px 15px;
+    margin: 0 0 20px 0;
+  }
+
+  .search-results ul {
+    margin: 0;
+  }
+  .clear-search-results {
     display: none;
   }
 }
