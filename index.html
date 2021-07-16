@@ -3,30 +3,43 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- style.css -->
     <link rel="stylesheet" href="css/style.css">
     <title>PulsR Vision</title>
 </head>
 
 <body>
-    <!-- Docs Head -->
-    <section class="docs-head">
+    <div class="docs-head">
         <div class="container">
-            <div>
-                <h1>Documentation</h1>
-                <p>Learn how to work with the PulsR Vision platform</p>
+            <div class="primary">
+                <div>
+                    <h1>Documentation</h1>
+                    <p>Learn how to work with the PulsR Vision platform</p>
+                </div>
             </div>
-            <div class="search-input">
-                <input type="text" placeholder="Type to Search..." name="keyword" class="form-control input-sm">
+
+            <div id="site-search">
+                <div class="search-flex">
+                    <form id="search-form" name="searchForm" role="form" onsubmit="return false">
+                        <div class="search-wrapper">
+                            <div class="search-container">
+                                <input autocomplete="off" placeholder="Type to Search..." id="search"
+                                    class="search-input" aria-label="Search site" type="text" name="q">
+                            </div>
+                            <div class="search-error hide-element"><span class="search-error-message"></span></div>
+                        </div>
+                    </form>
+                </div>
             </div>
+
+            <section class="search-results">
+                <div id="search-header"></div>
+                <ul></ul>
+                <button class="button clear-search-results">Clear Search Results</button>
+            </section>
         </div>
-        </div>
-    </section>
+    </div>
 
     <!-- Docs main -->
     <section class="docs-main m-3 context">
@@ -82,13 +95,12 @@
             </div>
     </section>
 
-    <!-- Mark.js -->
-    <script src="https://cdn.jsdelivr.net/g/jquery@2.2.4,bootstrap@3.3.6,mark.js@8.6.0(jquery.mark.min.js)"></script>
+    <!-- Lunrjs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js"
+        integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.min.js"></script>
-
-    <script src="js/search.js"></script>
-
+    <script src="js/lunr.js"></script>
 </body>
 
 </html>
